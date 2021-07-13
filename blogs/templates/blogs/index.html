@@ -9,6 +9,9 @@
      {% for blogpost in blogposts %}
       <li>
         <p>{{ blogpost.text }}</p>
+        <p>
+          <a href="{% url 'blogs:edit_blog_post' blog_post.id %}"Edit blog post</a>
+        </p>
       </li>
      {% empty %}
       <li>No blog posts have been added yet.</li>
