@@ -10,7 +10,7 @@
       <li>
         <p>{{ blogpost.text }}</p>
         <p>
-          <a href="{% url 'blogs:edit_blog_post' blog_post.id %}"Edit blog post</a>
+          <a href="{% url 'blogs:edit_blog_post' blogpost.id %}">Edit blog post</a>
         </p>
       </li>
      {% empty %}
